@@ -15,3 +15,7 @@ output "senc_out" {
   description = "my sensitive output"
   sensitive = true
 }
+
+output "pet_names" {
+  value = random_pet.pet[1]
+}
