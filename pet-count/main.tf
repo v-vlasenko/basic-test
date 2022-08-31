@@ -17,5 +17,14 @@ output "senc_out" {
 }
 
 output "pet_names" {
-  value = random_pet.pet[1]
+  value1 = random_pet.pet[1].id
+  value2 = random_pet.pet[2].id
+  value3 = random_pet.pet[3].id
+  value4 = random_pet.pet[4].id
+  value5 = random_pet.pet[5].id
+  value6 = random_pet.pet[6].id
+  value7 = random_pet.pet[7].id
+  value8 = random_pet.pet[8].id
+  value9 = random_pet.pet[9].id
+  value10 = random_pet.pet[10].id
 }
