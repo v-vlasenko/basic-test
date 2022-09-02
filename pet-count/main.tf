@@ -1,8 +1,19 @@
+terraform {
+  backend "remote" {
+    hostname = "scalra.main.scalr.dev"
+    organization = "env-u7caguaicfgmihg"
+
+    workspaces {
+      name = "ws-cli-dev"
+    }
+  }
+}
+
 resource "random_pet" "pet" {
   count = 10
   keepers = {
     # Generate a new pet name each time
-    timestamp = timestamp()
+    name = "Vlad"
   }
 }
 
@@ -15,3 +26,12 @@ output "senc_out" {
   description = "my sensitive output"
   sensitive = true
 }
+
+output "pets" {
+  value = random_pet.pet[*].id
+}
+
+output "pet_keeper" {
+  value = random_pet.pet[0].keepers.name
+}
+

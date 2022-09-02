@@ -41,10 +41,10 @@ output "very_long" {
 output "senc_out" {
   value = "secret data"
   description = "my sensitive output"
-  sensitive = true
+  sensitive = false
 }
 
 output "output_run_id" {
   value = var.run_id
-  sensitive = true
+  sensitive = false
 }
