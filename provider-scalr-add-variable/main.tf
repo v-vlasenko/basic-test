@@ -13,7 +13,7 @@ provider "scalr" {
 }
 
 resource "scalr_workspace" "example" {
-  name           = "ws-dev"
+  name           = "ws-dev-test1"
   environment_id = "env-svrcnchebt61e30"
 }
 
