@@ -46,5 +46,5 @@ output "senc_out" {
 
 output "output_run_id" {
   value = var.run_id
-  sensitive = false
+  sensitive = true
 }
