@@ -3,7 +3,7 @@ version = "v1"
 
 policy "workspace_name" {
   enabled           = true
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 
