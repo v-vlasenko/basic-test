@@ -1,3 +1,0 @@
-hostname = "https://f3c6838b84b6.test-env.scalr.com"
-api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyIiwianRpIjoiYXQtdGs5djl0bWQ0cXJyZXI4In0.D4KVEOcGcNPjaGCcDgp2t82TPMa7Pj4gqFxCKUVqu3k"
-github_token = "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"

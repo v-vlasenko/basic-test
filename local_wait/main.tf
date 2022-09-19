@@ -1,3 +1,14 @@
+terraform {
+  backend "remote" {
+    hostname = "ac28fb2217ab.test-env.scalr.com"
+    organization = "env-u815sdhd2u26h8g"
+
+    workspaces {
+      name = "118"
+    }
+  }
+}
+
 variable "run_id" {
   default = "run_id_2"
   sensitive = true
@@ -46,5 +57,5 @@ output "senc_out" {
 
 output "output_run_id" {
   value = var.run_id
-  sensitive = false
+  sensitive = true
 }
