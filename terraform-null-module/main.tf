@@ -1,4 +1,4 @@
-module "null" {
+module {
   source = "./modules/null"
   trigger = "one"
 }
