@@ -10,7 +10,7 @@ terraform {
     }
 }
 
-provider scalr {
+provider {
   hostname = var.hostname
   token    = var.api_token
 }
