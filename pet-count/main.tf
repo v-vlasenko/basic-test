@@ -1,3 +1,14 @@
+terraform {
+  backend "remote" {
+    hostname = "mainiacp.org6.te.scalr-labs.net"
+    organization = "env-svrcnchebt61e30"
+
+    workspaces {
+      name = "agent-pool-test"
+    }
+  }
+}
+
 resource "random_pet" "pet" {
   count = 10
   keepers = {
