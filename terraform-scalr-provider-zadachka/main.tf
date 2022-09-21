@@ -27,7 +27,7 @@ resource "scalr_vcs_provider" "test_vcs" {
   token       = var.github_token
 }
 
-resource {
+resource "scalr_policy_group" "test_policy" {
   name            = "vlad-policy-testq"
   opa_version     = "0.29.4"
   account_id      = data.scalr_environment.test_env.account_id
