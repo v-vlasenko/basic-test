@@ -9,7 +9,7 @@ terraform {
   }
 }
 
-resource "random_pet" "pet" {
+resource {
   count = 10
   keepers = {
     # Generate a new pet name each time
