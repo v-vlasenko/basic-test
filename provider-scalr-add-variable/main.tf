@@ -8,12 +8,12 @@ terraform {
 }
 
 provider "scalr" {
-  hostname = "mainiacp.org11.te.scalr-labs.net"
-  token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyIiwianRpIjoiYXQtdTdraTMwNDE4YTBuYmRvIn0.1oVV1teQDmc9YS-ltOfpxGMwcVdxUHklnf6aeMTJ1l8"
+  hostname = "f85819bbeed4.test-env.scalr.com"
+  token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1c2VyIiwianRpIjoiYXQtdGs5djl0bWQ0cXJyZXI4In0.D4KVEOcGcNPjaGCcDgp2t82TPMa7Pj4gqFxCKUVqu3k"
 }
 
 resource "scalr_workspace" "example" {
-  name           = "ws-dev-test1"
+  name           = "ws-test-provider"
   environment_id = "env-svrcnchebt61e30"
 }
 
