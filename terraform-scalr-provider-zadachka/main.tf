@@ -15,7 +15,7 @@ provider scalr {
   token    = var.api_token
 }
 
-data "scalr_environment" "test_env" {
+data {
   account_id = "acc-svrcncgh453bi8g" 
   name = "tfenv1"
 }
