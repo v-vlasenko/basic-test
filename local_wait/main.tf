@@ -1,14 +1,3 @@
-terraform {
-  backend "remote" {
-    hostname = "ac28fb2217ab.test-env.scalr.com"
-    organization = "env-u815sdhd2u26h8g"
-
-    workspaces {
-      name = "118"
-    }
-  }
-}
-
 variable "run_id" {
   default = "run_id_2"
   sensitive = true
@@ -45,6 +34,7 @@ resource "null_resource" "env_vars" {
   }
 }
 
+
 output "very_long" {
   value = "Lorem dfipsusdm dolor sit ameывt, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"  
 }
@@ -52,7 +42,7 @@ output "very_long" {
 output "senc_out" {
   value = "secret data"
   description = "my sensitive output"
-  sensitive = false
+  sensitive = true
 }
 
 output "output_run_id" {
