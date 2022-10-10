@@ -1,6 +1,3 @@
-# make sure var file is passed in CLI:
-# terraform apply -var-file="terraform.tfvars"
-
 terraform {
     required_providers {
         scalr = {
@@ -16,7 +13,7 @@ provider scalr {
 }
 
 resource "scalr_workspace" "ws" {
-  count = 4990
+  count = 5000
   name            = "ws1-${count.index}"
-  environment_id  = "env-svrcnchebt61e30"
+  environment_id  = "env-u8s912p8ttvked8"
 }

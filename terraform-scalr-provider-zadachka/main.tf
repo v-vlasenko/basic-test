@@ -1,6 +1,3 @@
-# make sure var file is passed in CLI:
-# terraform apply -var-file="terraform.tfvars"
-
 terraform {
     required_providers {
         scalr = {
