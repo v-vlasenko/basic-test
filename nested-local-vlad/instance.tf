@@ -3,6 +3,6 @@
 #}
 
 module "test" {
-    source  = "./test"
-    }
+    source  = "./terraform-test-vlad/terraform-test-vlad1/terraform-test-vlad2"
+}
     
