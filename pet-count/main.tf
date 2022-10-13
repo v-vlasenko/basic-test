@@ -2,7 +2,7 @@ resource "random_pet" "pet" {
   count = 9
   keepers = {
     # Generate a new pet name each time
-    name = "Vlad"
+    name = "Vladyslav"
   }
 }
 output "very_long" {
