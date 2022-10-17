@@ -1,10 +1,13 @@
+
 terraform {
-    required_providers {
-        scalr = {
-            source  = "registry.scalr.io/scalr/scalr"
-            version = "1.0.0-rc36"
-        }
+  backend "remote" {
+    hostname = "7c918c1068d4.test-env.scalr.com"
+    organization = "env-svrcnchebt61e30"
+
+    workspaces {
+      name = "ws4"
     }
+  }
 }
 
 provider scalr {

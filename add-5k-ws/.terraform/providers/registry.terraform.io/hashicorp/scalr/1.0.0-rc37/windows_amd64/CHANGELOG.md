@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **New data source:**  `scalr_variable` ([#176](https://github.com/Scalr/terraform-provider-scalr/pull/176))
+- **New data source:**  `scalr_variables` ([#176](https://github.com/Scalr/terraform-provider-scalr/pull/176))
+- `scalr_environment`: added new attribute `tag_ids` ([#174](https://github.com/Scalr/terraform-provider-scalr/pull/174))
+- `data.scalr_environment`: added new attribute `tag_ids` ([#174](https://github.com/Scalr/terraform-provider-scalr/pull/174))
+
+### Fixed
+
+- `scalr_policy_group` data source: remove environments include from policy groups ([172](https://github.com/Scalr/terraform-provider-scalr/pull/172))
+
+### Removed
+
+- `scalr_policy_group` data source: remove `workspaces` attribute ([173](https://github.com/Scalr/terraform-provider-scalr/pull/173))
+- `scalr_policy_group` resource: remove `workspaces` attribute ([173](https://github.com/Scalr/terraform-provider-scalr/pull/173))
+
 ## [1.0.0-rc36] - 2022-08-19
 
 ### Added
