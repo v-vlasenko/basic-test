@@ -22,7 +22,7 @@ variable "float" {
 }
 
 variable "null" {
-  # default = null
+  default = null
   sensitive = true
 }
 
