@@ -8,17 +8,17 @@ resource "random_pet" "pet" {
 
 variable "boolean" {
   default = true
-  sensitive = false
+  sensitive = true
 }
 
 variable "number" {
   default = 12
-  sensitive = false
+  sensitive = true
 }
 
 variable "float" {
   default = 15.55
-  sensitive = false
+  sensitive = true
 }
 
 variable "null" {
@@ -28,7 +28,7 @@ variable "null" {
 
 variable "list" {
   default = ["322", true, 15.22]
-  sensitive = false
+  sensitive = true
 }
 
 variable "map" {
@@ -36,7 +36,7 @@ variable "map" {
     key1 = "map value 1"
     key2 = "map value 2"
   }
-  sensitive = false
+  sensitive = true
 }
 
 variable "object" {
@@ -44,7 +44,7 @@ variable "object" {
     ob_1 = true
     ob_2 = "stringObjectValue"
   }
-  sensitive = false
+  sensitive = true
 }
 
 resource "null_resource" "test" {
@@ -55,23 +55,25 @@ resource "null_resource" "test" {
 
 output "var_map_key_1" {
   value = var.map.key1
-  sensitive = false
+  sensitive = true
 }
 
 output "var_map_key_2" {
   value = var.map.key2
-  sensitive = false
+  sensitive = true
 }
 
 output "var_map" {
   value = var.map
-  sensitive = false
+  sensitive = true
 }
 
 output "var_obj" {
   value = var.object
+  sensitive = true
 }
 
 output "CAPITALIZED_OUTPUT" {
   value = "BIG LETTERS ARE GOOD"
+  sensitive = true
 }
