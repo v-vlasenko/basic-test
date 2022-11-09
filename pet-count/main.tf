@@ -1,5 +1,5 @@
 resource "random_pet" "pet" {
-  count = 10
+  count = 8
   keepers = {
     # Generate a new pet name each time
     name = "Vlad"
