@@ -4,7 +4,7 @@ resource "random_pet" "pet" {
     # Generate a new pet name each time
     name = "Vlady"
   }
-
+}
 
 variable "boolean" {
   default = true
