@@ -21,6 +21,31 @@ variable "float" {
   sensitive = true
 }
 
+variable "float1" {
+  default = 15.55
+  sensitive = true
+}
+
+variable "float2" {
+  default = 15.55
+  sensitive = true
+}
+
+variable "float3" {
+  default = 15.55
+  sensitive = true
+}
+
+variable "float4" {
+  default = 15.55
+  sensitive = true
+}
+
+variable "float5" {
+  default = 15.55
+  sensitive = true
+}
+
 variable "null" {
   default = null
   sensitive = true
