@@ -61,7 +61,7 @@ variable "map" {
     key1 = "map value 1"
     key2 = "map value 2"
   }
-  sensitive = true
+  sensitive = false
 }
 
 variable "object" {
