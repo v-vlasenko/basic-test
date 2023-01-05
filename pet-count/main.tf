@@ -6,15 +6,13 @@ resource "random_pet" "pet" {
   }
 }
 
-# variable "boolean" {
-#   default = true
-#   sensitive = true
-# }
+variable "boolean" {
+  sensitive = true
+}
 
-# variable "number" {
-#   default = 12
-#   sensitive = true
-# }
+variable "number" {
+  sensitive = true
+}
 
 # variable "float" {
 #   default = 15.55
