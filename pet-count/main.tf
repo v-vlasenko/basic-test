@@ -7,10 +7,12 @@ resource "random_pet" "pet" {
 }
 
 variable "boolean" {
+  default = true
   sensitive = true
 }
 
 variable "number" {
+  default = 0.1
   sensitive = true
 }
 
