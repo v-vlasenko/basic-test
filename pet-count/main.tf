@@ -11,7 +11,7 @@ variable "boolean" {
   sensitive = true
 }
 
-variable "number" {
+variable "float" {
   default = 0.1
   sensitive = true
 }
